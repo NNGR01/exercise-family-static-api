@@ -16,21 +16,21 @@ class FamilyStructure:
         self._members = [
             {
                 "id": self._generateId(),
-                "name": "Jhon",
+                "first_name": "Jhon",
                 "last_name": "Jackson",
                 "age": 33,
                 "lucky_numbers" : [7, 13, 22]
             },
             {
                 "id": self._generateId(),
-                "name": "Jane",
+                "first_name": "Jane",
                 "last_name": "Jackson",
                 "age": 35,
                 "lucky_numbers" : [10, 14, 3]
             },
             {
                 "id": self._generateId(),
-                "name": "Jimmy",
+                "first_name": "Jimmy",
                 "last_name": "Jackson",
                 "age": 5,
                 "lucky_numbers" : [1]
@@ -50,7 +50,7 @@ class FamilyStructure:
         else:
             new_member["id"] = self._generateId()
 
-        new_member["name"] = str(member["name"])
+        new_member["first_name"] = str(member["first_name"])
         new_member["lastname"] = self.last_name 
         new_member["age"] = int(member["age"])
         new_member["lucky_numbers"] = member["lucky_numbers"]
